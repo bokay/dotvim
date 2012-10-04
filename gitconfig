@@ -1,16 +1,17 @@
 [user]
-  name = Yannick Francois
-  email = yannick.francois@free.fr
+  name = Nicolas Charlery
+  email = nicolas.charlery@gmail.com
 
 [alias]
   st = status
   co = checkout
   ci = commit
-  br = branch
   df = diff
+  dfc = diff --cached
   lg = log -p --color -b
   unstage = reset HEAD
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  df = diff
 
 [color]
   diff = auto
@@ -27,7 +28,7 @@
   default = tracking
 
 [github]
-  user = yaf
+  user = nicocharlery
 
 [diff]
   color = auto
