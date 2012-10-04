@@ -60,7 +60,7 @@ if has('statusline')
 endif
 
 noremap <S-space> <C-b>
-noremap <space> <C-f>
+"noremap <space> <C-f>
 
 " map <up> <ESC>:bp<RETURN>
 map <up> {
@@ -68,9 +68,9 @@ map <up> {
 map <down> }
 " map <left> <ESC>:NERDTreeToggle<RETURN>
 " map <left> <ESC>:buffer  
-map <left> <C-B>
+" map <left> <C-B>
 " map <right> <ESC>:ls<RETURN>
-map <right> <C-F>
+" map <right> <C-F>
 
 set switchbuf=newtab
 nnoremap <F8> :sbnext<CR>
@@ -90,3 +90,12 @@ au BufNewFile,BufRead *.json set ft=javascript
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
+set wmw=0
+"nmap <c-h> <c-w>h<c-w><Bar>
+"nmap <c-l> <c-w>l<c-w><Bar>
+"map <C-J> <C-W>j<C-W>_
+"map <C-K> <C-W>k<C-W>_
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
