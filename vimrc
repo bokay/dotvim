@@ -79,10 +79,10 @@ nnoremap <S-F8> :sbprevious<CR>
 " Remove whitespaces
 map <f6> :%s/\s\+$//<esc>:nohl<CR>:w<CR>
 
-"set autowrite "autowriteall ?
-"autocmd FocusLost * wall
-autocmd CursorHold * update
-set updatetime=20
+" set autowrite "autowriteall ?
+" autocmd FocusLost * wall
+" autocmd CursorHold * update
+" set updatetime=20
 
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
 au BufNewFile,BufRead *.json set ft=javascript
