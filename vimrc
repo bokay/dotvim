@@ -89,7 +89,6 @@ au BufNewFile,BufRead *.json set ft=javascript
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
-
 set wmw=0
 "nmap <c-h> <c-w>h<c-w><Bar>
 "nmap <c-l> <c-w>l<c-w><Bar>
@@ -99,3 +98,5 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+
+autocmd BufWritePre * :%s/\s\+$//e  "Remove trailing spaces
