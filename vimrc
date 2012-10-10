@@ -68,9 +68,9 @@ map <up> {
 map <down> }
 " map <left> <ESC>:NERDTreeToggle<RETURN>
 " map <left> <ESC>:buffer  
-" map <left> <C-B>
+ map <C-left> <ESC>:bNext<CR>
 " map <right> <ESC>:ls<RETURN>
-" map <right> <C-F>
+ map <C-right> <ESC>:bPrevious<CR>
 
 set switchbuf=newtab
 nnoremap <F8> :sbnext<CR>
