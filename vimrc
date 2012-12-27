@@ -13,7 +13,7 @@ set shiftwidth=2
 set shiftround
 set expandtab
 set autoindent
-filetype plugin indent on 
+filetype plugin indent on
 set ignorecase
 set smartcase
 " set smarttab " use tabs at the start of a line, spaces elsewhere
@@ -27,7 +27,7 @@ set ruler           " show the cursor position all the time
 "set visualbell t_vb    " turn off error beep/flash
 set novisualbell    " turn off visual bell
 set number          " show line numbers
-set ignorecase      " ignore case when searching 
+set ignorecase      " ignore case when searching
 set title           " show title in console title bar
 set ttyfast         " smoother changes
 set modeline        " last lines in document sets vim mode
@@ -39,7 +39,7 @@ set encoding=utf-8
 
 " set cursorline
 
-syntax on 
+syntax on
 set term=xterm-256color
 " set background=dark " we are using a dark background
 set background=dark
@@ -47,14 +47,14 @@ set background=dark
 colorscheme desert256
 set guifont=Inconsolata:h20
 
-set backspace=2 
-set laststatus=2 
+set backspace=2
+set laststatus=2
 set backupdir=/tmp
 
 if has('statusline')
-  set statusline=%<%f\ 
-  set statusline+=%w%h%m%r 
-  set statusline+=\ [%{&ff}/%Y]  
+  set statusline=%<%f\
+  set statusline+=%w%h%m%r
+  set statusline+=\ [%{&ff}/%Y]
   set statusline+=\ [%{getcwd()}]
   set statusline+=%=%-14.(Line:\ %l\ of\ %L\ [%p%%]\ -\ Col:\ %c%V%)
 endif
@@ -67,7 +67,7 @@ map <up> {
 " map <down> <ESC>:bn<RETURN>
 map <down> }
 " map <left> <ESC>:NERDTreeToggle<RETURN>
-" map <left> <ESC>:buffer  
+" map <left> <ESC>:buffer
  map <C-left> <ESC>:bNext<CR>
 " map <right> <ESC>:ls<RETURN>
  map <C-right> <ESC>:bPrevious<CR>
@@ -98,5 +98,10 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e  "Remove trailing spaces
