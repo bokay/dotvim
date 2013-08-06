@@ -16,9 +16,7 @@ set autoindent
 filetype plugin indent on
 set ignorecase
 set smartcase
-" set smarttab " use tabs at the start of a line, spaces elsewhere
 set incsearch
-" assume the /g flag on :s substitutions to replace all matches in a line:
 set gdefault
 
 set scrolloff=3     " keep 3 lines when scrolling
@@ -41,9 +39,7 @@ set encoding=utf-8
 
 syntax on
 set term=xterm-256color
-" set background=dark " we are using a dark background
 set background=dark
-" colorscheme solarized
 colorscheme desert256
 set guifont=Inconsolata:h20
 
@@ -60,22 +56,16 @@ if has('statusline')
 endif
 
 " vim-rspec mappings
- nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
- nnoremap <Leader>s :call RunNearestSpec()<CR>
- nnoremap <Leader>l :call RunLastSpec()<CR>
+nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>s :call RunNearestSpec()<CR>
+nnoremap <Leader>l :call RunLastSpec()<CR>
 
 noremap <S-space> <C-b>
-"noremap <space> <C-f>
 
-" map <up> <ESC>:bp<RETURN>
 map <up> {
-" map <down> <ESC>:bn<RETURN>
 map <down> }
-" map <left> <ESC>:NERDTreeToggle<RETURN>
-" map <left> <ESC>:buffer
- map <C-left> <ESC>:bNext<CR>
-" map <right> <ESC>:ls<RETURN>
- map <C-right> <ESC>:bPrevious<CR>
+map <C-left> <ESC>:bNext<CR>
+map <C-right> <ESC>:bPrevious<CR>
 
 set switchbuf=newtab
 nnoremap <F8> :sbnext<CR>
@@ -84,21 +74,13 @@ nnoremap <S-F8> :sbprevious<CR>
 " Remove whitespaces
 map <f6> :%s/\s\+$//<esc>:nohl<CR>:w<CR>
 
-" set autowrite "autowriteall ?
-" autocmd FocusLost * wall
-" autocmd CursorHold * update
-" set updatetime=20
-
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
 au BufNewFile,BufRead *.json set ft=javascript
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 set wmw=0
-"nmap <c-h> <c-w>h<c-w><Bar>
-"nmap <c-l> <c-w>l<c-w><Bar>
-"map <C-J> <C-W>j<C-W>_
-"map <C-K> <C-W>k<C-W>_
+
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
