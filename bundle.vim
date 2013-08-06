@@ -18,6 +18,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'oscarh/vimerl'
+Bundle 'thoughtbot/vim-rspec'
 
 " Colorschemes
 Bundle 'desert256.vim'

@@ -59,6 +59,11 @@ if has('statusline')
   set statusline+=%=%-14.(Line:\ %l\ of\ %L\ [%p%%]\ -\ Col:\ %c%V%)
 endif
 
+" vim-rspec mappings
+ nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
+ nnoremap <Leader>s :call RunNearestSpec()<CR>
+ nnoremap <Leader>l :call RunLastSpec()<CR>
+
 noremap <S-space> <C-b>
 "noremap <space> <C-f>
 
