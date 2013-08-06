@@ -92,3 +92,7 @@ nmap <silent> <C-h> :wincmd h<CR>
 nmap <silent> <C-l> :wincmd l<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e  "Remove trailing spaces
+
+" Open new split panes to right and bottom
+set splitbelow
+set splitright
