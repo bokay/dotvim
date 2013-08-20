@@ -59,6 +59,7 @@ endif
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
+let g:rspec_command = "Dispatch zeus rspec {spec}"
 
 noremap <S-space> <C-b>
 
@@ -96,3 +97,6 @@ autocmd BufWritePre * :%s/\s\+$//e  "Remove trailing spaces
 " Open new split panes to right and bottom
 set splitbelow
 set splitright
+
+" Disable auto comments
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
