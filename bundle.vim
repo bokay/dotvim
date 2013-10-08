@@ -20,6 +20,8 @@ Bundle 'slim-template/vim-slim'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'oscarh/vimerl'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 
 " Colorschemes
 Bundle 'desert256.vim'

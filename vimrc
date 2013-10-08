@@ -1,6 +1,11 @@
 set nocompatible
 filetype off " required by Vundle plumbing
 
+runtime macros/matchit.vim
+if has("autocmd")
+  filetype indent plugin on
+endif
+
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
