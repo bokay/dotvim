@@ -22,7 +22,7 @@
 
 [core]
   editor = /usr/bin/vim
-  excludesfile = *.swp
+  excludesfile = /opt/boxen/config/git/gitignore
 
 [push]
   default = tracking
@@ -52,3 +52,9 @@
   # automatically sets --autosquash when rebasing interactively
   # autosquash automatically reorders based on fixup! or squash! prefixes in commit message
   autosquash = true
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+protocol = https

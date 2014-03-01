@@ -22,6 +22,8 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'oscarh/vimerl'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'slim-template/vim-slim'
+Bundle 'kien/ctrlp.vim'
 
 " Colorschemes
 Bundle 'desert256.vim'

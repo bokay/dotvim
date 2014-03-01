@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 set nocompatible
 filetype off " required by Vundle plumbing
 
@@ -45,6 +47,7 @@ set encoding=utf-8
 syntax on
 set term=xterm-256color
 set background=dark
+" hi Normal ctermbg=white
 colorscheme desert256
 set guifont=Inconsolata:h20
 
@@ -77,6 +80,8 @@ set switchbuf=newtab
 nnoremap <F8> :sbnext<CR>
 nnoremap <S-F8> :sbprevious<CR>
 
+nnoremap ; :
+
 " Remove whitespaces
 map <f6> :%s/\s\+$//<esc>:nohl<CR>:w<CR>
 
@@ -105,3 +110,6 @@ set splitright
 
 " Disable auto comments
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Ctrl P
+set runtimepath^=~/.vim/bundle/ctrlp.vim
